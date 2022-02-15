@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/expense.html">Expenses</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3 mb-3">
+      <div class="row">
+        <div class="col-9">
+          <h4 style="margin-bottom: 0px">Dashboard</h4>
+          <p class="subtitle">Bank Accounts</p>
+          <div class="row mt-2">
+            <div class="col-md-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="ion-card bank-icons"></i></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Salary and Expenses</h6>
+                  <h5 class="card-text">$265.00</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="ion-cash bank-icons"></i></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Everyday Money</h6>
+                  <h5 class="card-text">$3.99</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="ion-lock-combination bank-icons"></i></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Main Savings</h6>
+                  <h5 class="card-text">$500.04</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="ion-ios-cart bank-icons"></i></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Total Expenses (Month)</h6>
+                  <h5 class="card-text red-text">- $1400.00</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <p class="subtitle mt-3">Expense Balance</p>
+              <div class="card h-60">
+                <div class="card-body">
+                  <div class="card-text"><canvas id="myChart"></canvas></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+              <p class="subtitle mt-3">Actual Monthly Expendator</p>
+              <div class="card h-60">
+                <div class="card-body">
+                  <div class="card-text"><canvas id="monthChart"></canvas></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <h4 style="margin-bottom: 0px">Expenses</h4>
+          <p class="subtitle">List of Expenses</p>
+          <div class="btn-group mb-3" role="group" aria-label="Basic example" style="width: 100%">
+            <button type="button" class="btn btn-dark active">Week</button>
+            <button type="button" class="btn btn-dark">Fortnight</button>
+            <button type="button" class="btn btn-dark">Month</button>
+          </div>
+          <div class="expense-item">
+            <p>Harmoney Loan</p>
+            <p>$450.82</p>
+          </div>
+          <div class="expense-item">
+            <p>Harmoney Loan</p>
+            <p>$450.82</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

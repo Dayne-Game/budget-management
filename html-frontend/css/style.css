@@ -1,0 +1,67 @@
+body {
+  background: #f4f4f4;
+}
+
+.subtitle {
+  color: #aaa;
+}
+
+.bank-icons {
+  font-size: 35px !important;
+}
+
+.card {
+  border: none !important;
+}
+
+.red-text {
+  color: rgb(217, 89, 136) !important;
+}
+
+.red {
+  background: rgb(217, 89, 136) !important;
+}
+
+.green-text {
+  color: #8bdb81 !important;
+}
+
+.green {
+  background: #8bdb81 !important;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+
+  background: #fff;
+}
+
+.expense-item > p,
+.main-expense-item > p,
+.main-expense-item-heading > p {
+  margin-bottom: 0px;
+}
+
+.main-expense-item,
+.main-expense-item-heading {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.main-expense-item-heading {
+  background: #333 !important;
+  color: #fff !important;
+}
